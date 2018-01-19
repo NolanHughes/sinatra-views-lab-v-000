@@ -1,7 +1,8 @@
 <!DOCTYPE>
 <html>
   <body>
-    <% today = Time.now %>
-    <p>The date is Wednesday, <%= today %></p>
+    <% day_of_week = DateTime.now.strftime('%A') %>
+    <% day = DateTime.now.strftime('%A') %>
+    <p>The date is <%= day_of_week + ", " +  %></p>
   </body>
 </html>
